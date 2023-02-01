@@ -1,10 +1,10 @@
 package project252;
 
-public class SimpleChip extends Cookies {
-    public SimpleChip() {
+public class SunnyDay extends Cookies {
+    public SunnyDay() {
         super("Simple Chip", 4.99);
     }
-    public SimpleChip(Extra extra) {
+    public SunnyDay(Extra extra) {
         super("Simple Chip with "+ extra.getextra(), 4.99 + extra.getprice(), extra);
     }
     @Override

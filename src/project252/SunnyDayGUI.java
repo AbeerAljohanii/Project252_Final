@@ -9,12 +9,12 @@ package project252;
  *
  * @author ra52m
  */
-public class SimpleChipGUI extends javax.swing.JFrame {
+public class SunnyDayGUI extends javax.swing.JFrame {
 
     /**
      * Creates new form SimpleChipGUI
      */
-    public SimpleChipGUI() {
+    public SunnyDayGUI() {
         initComponents();
     }
 
@@ -103,14 +103,14 @@ public class SimpleChipGUI extends javax.swing.JFrame {
 
         Cart c = new Cart();
         Cookies C = c.typeOfCookies("Simple Chip");
-        //SimpleChip s = (SimpleChip) C;
+        //SimpleChip s = (SunnyDay) C;
 
         if (without.isSelected()) {
-            Cart.addarray(new SimpleChip());
+            Cart.addarray(new SunnyDay());
         } else if (White.isSelected()) {
-            Cart.addarray(new SimpleChip(new WhiteChocolate()));
+            Cart.addarray(new SunnyDay(new WhiteChocolate()));
         } else {
-            Cart.addarray(new SimpleChip(new DarkChocolate()));
+            Cart.addarray(new SunnyDay(new DarkChocolate()));
         }
         Home h = new Home();
         h.show(true);
@@ -145,20 +145,21 @@ public class SimpleChipGUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SimpleChipGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SunnyDayGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SimpleChipGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SunnyDayGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SimpleChipGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SunnyDayGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SimpleChipGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SunnyDayGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SimpleChipGUI().setVisible(true);
+                new SunnyDayGUI().setVisible(true);
             }
         });
     }

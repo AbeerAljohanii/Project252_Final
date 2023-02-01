@@ -1,10 +1,10 @@
 package project252;
 
-public class ChocolatePeanuts extends Cookies {
-    public ChocolatePeanuts() {
+public class PinkVelvet extends Cookies {
+    public PinkVelvet() {
         super("Chocolate Peanuts", 6.99);
     }
-    public ChocolatePeanuts(Extra extra) {
+    public PinkVelvet(Extra extra) {
         super("Chocolate Peanuts with "+ extra.getextra(), 6.99 + extra.getprice(), extra);
     }
     @Override

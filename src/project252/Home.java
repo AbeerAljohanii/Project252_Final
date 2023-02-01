@@ -6,7 +6,7 @@
 package project252;
 
 public class Home extends javax.swing.JFrame {
-
+    static CookiesFactory cookiesFactory = new CookiesFactory();
     Project252 p = new Project252();
 
     public Home() {
@@ -20,11 +20,11 @@ public class Home extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        PinkVelvet = new javax.swing.JButton();
+        ChocolateChip = new javax.swing.JButton();
+        BirthdayCake = new javax.swing.JButton();
+        SunnyDay = new javax.swing.JButton();
+        backgound = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -47,41 +47,25 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 20, 120, 90));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\ra52m\\Downloads\\add4.png")); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 510, 80, 60));
+        PinkVelvet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/pinkVelvet.png"))); // NOI18N
+        PinkVelvet.setText("jButton2");
+        jPanel1.add(PinkVelvet, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 220, 330, 380));
 
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\ra52m\\Downloads\\add4.png")); // NOI18N
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 510, 80, 60));
+        ChocolateChip.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/chocolate chip.png"))); // NOI18N
+        ChocolateChip.setText("jButton2");
+        jPanel1.add(ChocolateChip, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 340, 390));
 
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\ra52m\\Downloads\\add4.png")); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 920, 80, 60));
+        BirthdayCake.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project252/BirthdayCake.png"))); // NOI18N
+        BirthdayCake.setText("jButton2");
+        jPanel1.add(BirthdayCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 620, 330, 380));
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\ra52m\\Downloads\\add4.png")); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 520, 80, 60));
+        SunnyDay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/SunnyDay.png"))); // NOI18N
+        SunnyDay.setText("jButton2");
+        jPanel1.add(SunnyDay, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 640, 340, 370));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/backgorundHome.png"))); // NOI18N
-        jLabel1.setMaximumSize(new java.awt.Dimension(1337, 1024));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1480, -1));
+        backgound.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project252/backgound.png"))); // NOI18N
+        backgound.setText("jLabel2");
+        jPanel1.add(backgound, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 1020));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,35 +93,6 @@ public class Home extends javax.swing.JFrame {
         this.show(false);
 
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        ChocolateChipGUI chip = new ChocolateChipGUI();
-        chip.show(true);
-        this.show(false);
-        //p.cookies(click, "Chocolate chip");
-
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        SimpleChipGUI chip = new SimpleChipGUI();
-        chip.show(true);
-        this.show(false);
-
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        ChocolatePeanutsGUI chip = new ChocolatePeanutsGUI();
-        chip.show(true);
-        this.show(false);
-
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        BirthdayCakeGUI chip = new BirthdayCakeGUI();
-        chip.show(true);
-        this.show(false);
-
-    }//GEN-LAST:event_jButton6ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -172,13 +127,13 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BirthdayCake;
+    private javax.swing.JButton ChocolateChip;
+    private javax.swing.JButton PinkVelvet;
+    private javax.swing.JButton SunnyDay;
+    private javax.swing.JLabel backgound;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

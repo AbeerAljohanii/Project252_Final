@@ -9,12 +9,12 @@ package project252;
  *
  * @author ra52m
  */
-public class ChocolatePeanutsGUI extends javax.swing.JFrame {
+public class PinkVelvetGUI extends javax.swing.JFrame {
 
     /**
      * Creates new form ChocolatePeanutsGUI
      */
-    public ChocolatePeanutsGUI() {
+    public PinkVelvetGUI() {
         initComponents();
     }
 
@@ -116,11 +116,11 @@ public class ChocolatePeanutsGUI extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         if (without.isSelected()) {
-            Cart.addarray(new ChocolatePeanuts());
+            Cart.addarray(new PinkVelvet());
         } else if (White.isSelected()) {
-            Cart.addarray(new ChocolatePeanuts(new WhiteChocolate()));
+            Cart.addarray(new PinkVelvet(new WhiteChocolate()));
         } else {
-            Cart.addarray(new ChocolatePeanuts(new DarkChocolate()));
+            Cart.addarray(new PinkVelvet(new DarkChocolate()));
         }
         Home h = new Home();
         h.show(true);
@@ -143,20 +143,21 @@ public class ChocolatePeanutsGUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ChocolatePeanutsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PinkVelvetGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ChocolatePeanutsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PinkVelvetGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ChocolatePeanutsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PinkVelvetGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ChocolatePeanutsGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PinkVelvetGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ChocolatePeanutsGUI().setVisible(true);
+                new PinkVelvetGUI().setVisible(true);
             }
         });
     }
