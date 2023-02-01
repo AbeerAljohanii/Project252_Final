@@ -11,8 +11,8 @@ public class Cart {
     
     static ArrayList<Cookies> cookie = new ArrayList<>();
     static double totalPrice;
+    CookiesFactory factory = new CookiesFactory();
     
-
     public ArrayList<Cookies> getCookie() {
         return cookie;
     }
@@ -27,5 +27,8 @@ public class Cart {
       cookie.add(c);
     }
     
+    Cookies typeOfCookies(String type){
+        return factory.getCookies(type);
+    }  
 
 }
