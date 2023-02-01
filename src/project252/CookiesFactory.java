@@ -13,7 +13,7 @@ public class CookiesFactory {
               return new SunnyDay(new DarkChocolate());
             }
             return new SunnyDay();
-        } else if (cookies.contains("pink velvet")) {
+        } else if (cookies.contains("pink velvet" )) {
             if(cookies.contains("extra white")){
               return new PinkVelvet(new WhiteChocolate());
             }else if(cookies.contains("extra dark")){
